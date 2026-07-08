@@ -80,12 +80,16 @@
     border-top-color: var(--accent-1);
     animation: spin .7s linear infinite;
   }
-  #loading-screen span{
-    font-family:'Dancing Script', cursive;
-    font-weight:700; font-size:22px;
-    background: var(--gradient);
-    -webkit-background-clip:text; background-clip:text; color:transparent;
-  }
+#loading-screen span {
+  font-family: 'Dancing Script', cursive !important;
+  font-style: normal !important;
+  font-weight: 700;
+  font-size: 30px;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
   @keyframes fadeOut{ to{ opacity:0; visibility:hidden; } }
   @keyframes spin{ to{ transform: rotate(360deg); } }
 
@@ -112,7 +116,7 @@
   .logo-script{
     font-family:'Dancing Script', cursive;  padding-right:30px;
     font-weight:700; font-style:italic;
-    font-size: 34px; line-height:1;
+    font-size: 30px; line-height:1;
     background: var(--gradient);
     -webkit-background-clip:text; background-clip:text; color:transparent;
     transform: skewX(-3deg);
@@ -314,7 +318,19 @@
 
 <div id="loading-screen">
   <div class="loader-ring"></div>
-  <span>Devi NA AI</span>
+  <span><i class="fa-solid fa-feather-pointed"></i><a style="transform: skewX(-19deg) !important; display: inline-block; color:red;  font-family: 'Dancing Script', cursive !important;
+    font-style: normal !important;
+    font-weight: 700;
+    font-size: 30px;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;">Devi Na&nbsp;</a><img
+      src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg"
+      alt="Verified Badge"
+      width="20"
+      height="20"
+      style="position:relative; top:-5px;"></span>
 </div>
 
 <div class="shell">
@@ -322,7 +338,13 @@
   <div class="app-bar">
     <img src="https://i.postimg.cc/26ZkssJ5/Screenshot-20260708-090833.jpg" alt="Devi AI App" class="logo-avatar">
     <div class="logo">
-      <span class="logo-script"><i class="fa-solid fa-feather-pointed"></i>Devi Na AI </span>
+      <span class="logo-script"><i class="fa-solid fa-feather-pointed"></i>Devi Na&nbsp;<img
+      src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg"
+      alt="Verified Badge"
+      width="20"
+      height="20"
+      style="position:relative; top:-5px;">
+      </span>
 
     </div>
     <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema">
@@ -330,7 +352,7 @@
     </button>
   </div>
 
-  <p class="subtitle"> <span class="logo-tag">DEVI NA AI APP</span> <br> Tulis deskripsi apa saja, klik buat gambar. Layanan gratis, kadang butuh percobaan ulang jika server sedang sibuk.</p>
+  <p class="subtitle"> <span class="logo-tag">DEVI NA APP</span> <br> Tulis deskripsi apa saja, klik buat gambar. Layanan gratis, kadang butuh percobaan ulang jika server sedang sibuk.</p>
   <!-- Gallery -->
   <section class="card">
     <div class="card-title"><i class="fa-solid fa-bolt"></i> Inspirasi</div>
@@ -395,7 +417,7 @@
   </section>
 
   <footer>
-    <span class="foot-logo">Devi</span>
+    <span class="foot-logo">Devi Na App</span>
     <div class="quick-links">
       <a href="#" style="color:var(--accent-2); text-decoration:none; font-size:12px;">Tentang</a> ·
       <a href="#" style="color:var(--accent-2); text-decoration:none; font-size:12px;">Kebijakan</a>
